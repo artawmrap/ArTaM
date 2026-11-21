@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080812">
+  <meta name="description" content="ArTaM — دنیای موسیقی رپ، ملودی‌های تاریک و صداهای بی‌مرز.">
+  <title>ArTaM — Dark Sound / New Wave</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#080812;--panel:#101020;--text:#f4f2ff;--muted:#a5a2bb;--purple:#9a62ff;--blue:#35b8ff;--line:rgba(255,255,255,.11)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:"Vazirmatn",sans-serif;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 15% 12%,rgba(110,53,220,.22),transparent 34%),radial-gradient(ellipse at 85% 40%,rgba(30,133,220,.16),transparent 35%),linear-gradient(145deg,#090914,#080812 55%,#0b0b19)}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .logo{font-size:27px;font-weight:900;letter-spacing:2px;direction:ltr;text-shadow:0 0 22px #9a62ff88}.logo span{color:var(--blue)}
+    .navlinks{display:flex;gap:30px;color:#c9c6d8;font-size:14px}.navlinks a:hover{color:white}
+    .social{border:1px solid #8f67ff77;border-radius:30px;padding:10px 18px;font-size:13px;transition:.25s}.social:hover{background:#8955ff22;box-shadow:0 0 24px #8955ff33}
+    .hero{min-height:690px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:45px;padding:70px 0 90px}
+    .eyebrow{color:#a98aff;font-size:13px;letter-spacing:3px;font-weight:700}.hero h1{font-size:clamp(58px,9vw,112px);line-height:.98;margin:18px 0 22px;direction:ltr;text-align:right;font-weight:900;letter-spacing:-5px}
+    .hero h1 em{font-style:normal;background:linear-gradient(100deg,#b16cff,#4bc8ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{color:var(--muted);font-size:17px;line-height:2;max-width:500px;margin:0 0 32px}
+    .actions{display:flex;gap:14px;flex-wrap:wrap}.btn{padding:13px 24px;border-radius:9px;font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:10px;transition:.25s}
+    .primary{background:linear-gradient(110deg,#8850e9,#278fdc);box-shadow:0 8px 35px #7445df44}.primary:hover{transform:translateY(-3px);box-shadow:0 12px 40px #7445df77}
+    .secondary{border:1px solid var(--line);background:#ffffff06}.secondary:hover{background:#ffffff12}
+    .visual{height:475px;position:relative;display:grid;place-items:center}
+    .orb{width:min(390px,85vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 38% 34%,#b68aff 0,#7843cb 19%,#24235d 48%,#0a0c20 72%);box-shadow:inset -25px -30px 70px #02030d,0 0 70px #7445df55,0 0 150px #258ed833;position:relative}
+    .orb:before,.orb:after{content:"";position:absolute;border:1px solid #9f7bff55;border-radius:50%;inset:-25px;transform:rotate(-24deg) scaleY(.36)}.orb:after{inset:-55px;transform:rotate(22deg) scaleY(.35);border-color:#45bfff55}
+    .orbtext{position:absolute;inset:0;display:grid;place-items:center;font-size:74px;font-weight:900;letter-spacing:-5px;direction:ltr;text-shadow:0 0 35px #b38affaa}
+    .tag{position:absolute;bottom:35px;left:2%;background:#111126cc;border:1px solid var(--line);backdrop-filter:blur(12px);padding:13px 18px;border-radius:10px;color:#c9c6d8;font-size:12px}
+    .tag b{display:block;color:white;font-size:15px;direction:ltr}
+    section{padding:85px 0}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:30px}.kicker{color:var(--blue);font-size:12px;letter-spacing:2px}.section-head h2{font-size:34px;margin:7px 0 0}.section-head p{color:var(--muted);font-size:13px;margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);background:linear-gradient(145deg,#17172b,#0d0d19);border-radius:14px;padding:25px;min-height:190px;position:relative;overflow:hidden}
+    .card:after{content:"";position:absolute;width:130px;height:130px;border-radius:50%;background:#8955ff22;filter:blur(35px);left:-35px;bottom:-55px}
+    .num{font-size:12px;color:#9d83d9;direction:ltr}.card h3{font-size:20px;margin:25px 0 8px}.card p{color:var(--muted);font-size:13px;line-height:1.9;margin:0}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.aboutbox{border:1px solid var(--line);background:linear-gradient(135deg,#17142a,#0b1220);padding:35px;border-radius:16px}.aboutbox .big{font-size:52px;font-weight:900;direction:ltr;color:#a987ff}.aboutbox p{color:var(--muted);line-height:2}
+    .aboutcopy h2{font-size:34px;margin:8px 0 15px}.aboutcopy p{color:var(--muted);line-height:2.1}
+    .follow{border:1px solid #6f62b955;background:linear-gradient(110deg,#17132b,#0c1b2b);border-radius:18px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:25px}.follow h2{font-size:30px;margin:0 0 8px}.follow p{color:var(--muted);margin:0}
+    footer{padding:28px 0;border-top:1px solid var(--line);color:#77758e;font-size:12px;display:flex;justify-content:space-between;gap:15px}.handle{direction:ltr;color:#c5b1ff;font-weight:700}
+    @media(max-width:760px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:65px 0 35px;gap:10px;text-align:center}.hero p{margin:0 auto 28px}.actions{justify-content:center}.visual{height:380px}.orb{width:270px}.orbtext{font-size:58px}.tag{bottom:5px;left:8%}.cards{grid-template-columns:1fr}.about{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:10px}.follow{display:block;text-align:center;padding:30px 22px}.follow .btn{margin-top:22px}footer{display:block;text-align:center}footer span{display:block;margin:6px}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav>
+      <a class="logo" href="#home">ArTa<span>M</span></a>
+      <div class="navlinks"><a href="#home">خانه</a><a href="#sound">فضای موسیقی</a><a href="#about">درباره</a><a href="#contact">ارتباط</a></div>
+      <a class="social" href="https://instagram.com/artawmrap" target="_blank" rel="noopener">Instagram ↗</a>
+    </nav>
+  </header>
+  <main>
+    <div class="wrap">
+      <section class="hero" id="home">
+        <div>
+          <div class="eyebrow">INDEPENDENT SOUND · NEW WAVE</div>
+          <h1>ArTa<em>M</em></h1>
+          <p>جایی برای صداهایی که شبیه هیچ‌کس نیستند؛ ترکیبی از رپ، ملودی‌های تاریک و احساسات واقعی. وارد دنیای من شو.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://instagram.com/artawmrap" target="_blank" rel="noopener">دنبال کردن در اینستاگرام <span>↗</span></a>
+            <a class="btn secondary" href="#sound">کشف دنیای من ↓</a>
+          </div>
+        </div>
+        <div class="visual" aria-label="طرح گرافیکی انتزاعی ArTaM">
+          <div class="orb"><div class="orbtext">A<span style="color:#65caff">M</span></div></div>
+          <div class="tag"><b>DARK / MELODIC</b>Sound beyond the ordinary</div>
+        </div>
+      </section>
+      <section id="sound">
+        <div class="section-head"><div><div class="kicker">THE SOUND</div><h2>جهان صوتی ArTaM</h2></div><p>از تاریکی تا اوج ملودی</p></div>
+        <div class="cards">
+          <article class="card"><div class="num">01 / RAP</div><h3>رپ مستقل</h3><p>فلو، کلمات و روایت‌هایی با هویت شخصی؛ بدون تقلید از مسیر دیگران.</p></article>
+          <article class="card"><div class="num">02 / MELODY</div><h3>ملودی‌های احساسی</h3><p>فضاهای ملودیک، عمیق و سینمایی برای لحظه‌هایی که حرف زدن کافی نیست.</p></article>
+          <article class="card"><div class="num">03 / DARK MOOD</div><h3>اتمسفر تاریک</h3><p>بیس عمیق، رنگ‌های سرد و حال‌وهوای شبانه؛ امضای بصری و شنیداری ArTaM.</p></article>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="aboutbox"><div class="big">NO RULES.</div><div class="big" style="color:#55bfff">JUST SOUND.</div><p>یک هویت مستقل؛ ساخته‌شده برای تجربه کردن، تغییر کردن و پیدا کردن صدای خودت.</p></div>
+        <div class="aboutcopy"><div class="kicker">ABOUT THE ARTIST</div><h2>این فقط موسیقی نیست؛ یک حسه.</h2><p>ArTaM یک فضای هنری برای موسیقی رپ و ملودی‌های دارک است. اینجا قرار است صدا، تصویر و احساس در یک جهان واحد کنار هم قرار بگیرند.</p></div>
+      </section>
+      <section id="contact">
+        <div class="follow">
+          <div><div class="kicker">STAY CONNECTED</div><h2>ادامه‌ی مسیر رو دنبال کن.</h2><p>برای تازه‌ترین خبرها، محتوا و انتشارهای جدید همراه باش.</p></div>
+          <a class="btn primary" href="https://instagram.com/artawmrap" target="_blank" rel="noopener">@artawmrap ↗</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="wrap"><span>© 2026 ArTaM — All rights reserved.</span><span class="handle">@artawmrap</span><span>MADE OF SOUND & FEELING</span></footer>
+</body>
+</html>
